@@ -2,9 +2,6 @@
 # http://www.myloadtest.com/loadrunner-gitignore/
  
  
-#temp Word documents
-$*.docx
- 
  
 # Unnecessary files added as part of the standard VuGen script template
 Breakpoints.xml
@@ -38,3 +35,4 @@ mdrv.log
 
 #RB decided to leave this one in, handy to prove script ran successfully before upload / commit
 #output.txt
+MySQL/~$*.docx

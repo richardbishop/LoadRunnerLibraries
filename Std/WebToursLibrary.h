@@ -698,3 +698,26 @@ CaptureAgmntNo()
 
 	web_create_html_param("AgmntNo","&AgmntNo=","&OutputChannel");
 }
+
+RandomDate(char *string)
+{
+int day;
+int month;
+int year;
+char *const slash = "/";
+char myDate[10];
+	 
+	day = rand() % 27 + 1;
+	//lr_output_message("%d", day);
+	month = rand() % 11 + 1;
+	//lr_output_message("%d", month);
+	year = 2014;
+	//lr_output_message("%d", year);
+	
+	//lr_output_message("%d%s%d%s%d", day, slash, month, slash, year);
+	
+	sprintf(myDate, "%d/%d/%d", day, month, year);
+	lr_output_message("Date:[%s]", myDate);
+	
+    return myDate;
+}
